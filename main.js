@@ -34,37 +34,79 @@ let age = Number(prompt(`What is your age?`))
 
 if (age >= 60)
 
-    console.log(`You qualify for the senior discount!`)
+    console.log(`You qualify for the senior discount!`);
 
 if (age < 16)
 
-    console.log(`You're not old enough to drive yet.`)
+    console.log(`You're not old enough to drive yet.`);
 
 if (age == 44)
 
-    console.log(`You're the same age as Mr.Squirrel`)
+    console.log(`You're the same age as Mr.Squirrel`);
 
 let user_name = prompt(`What is your name?`)
 
 if (user_name == "Mr. Squirrel")
 
-    console.log(`🐿️`)
+    console.log(`🐿️`);
 
 if (user_name.length > 7)
 
-    console.log(`You have a long name.`)
+    console.log(`You have a long name.`);
+
+if (user_name.length % 2 !=0)
+
+    console.log(`Your name is odd`);
+
+else 
+
+    console.log(`Your name is even`);
 
 let quiz = Number(prompt(`How long do you think their name is?`))
 
 if (quiz == user_name.length)
 
-    console.log(`That's correct! ✔️`)
+    console.log(`That's correct! ✔️`);
 
 if (user_name.length > quiz)
 
-    console.log(`Too low ✖️`)
+    console.log(`Too low ✖️`);
 
 if (user_name.length > quiz)
 
-    console.log(`Too high ✖️`)
+    console.log(`Too high ✖️`);
+}
+
+function longer_string(str1, str2) {
+
+if (str1.length > str2.length)
+
+    return `${str1}`;
+
+if (str1.length == str2.length)
+
+    return `${str1}, ${str2}`;
+
+if (str1.length < str2.length)
+
+    return `${str2}`;
+
+}
+
+function discriminant(a, b, c) {
+
+let value = b**2 - (4*a*c)
+
+if (value > 0)
+
+    return (`There are 2 zeros.`)
+
+if (value == 0)
+
+    return (`There are INFINATE zeros. MUAHAHAHA`)
+
+if (value < 0)
+
+    return (`There are 0 zeros. 0s? Zer 0's? I don't kn0ws.`)
+        
 }
