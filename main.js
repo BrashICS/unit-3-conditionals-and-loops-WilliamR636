@@ -113,6 +113,9 @@ if (value < 0)
 
 function SpOoOoOoOoky() {
 
+let SpookinessLevel = 0
+let BeginningSecret = 0
+
 let decision1 = Number(prompt("Are you suuuuuuure you want to continue? It's very spooky."))
 
 if (decision1 == 1){
@@ -127,7 +130,7 @@ if (decision1 == 1){
 
         alert("Oh. Well at least it was entertaining enough to come back! Or you're a completionist who wants to see every ending. Either way, since you came back, I will give you an additional spook to make SURE you get scared this time. Good Luck!")}
 
-    let BeginningSecret = 1
+     BeginningSecret = 1
     
     }
 
@@ -139,13 +142,12 @@ if (decision1 == 2) {
 
 if (decision1 !=1 && decision1 !=2) {
 
-    alert("Well I can't hear you so I assume it's a good spookin' night. Prepare...TO GET SPOOKED! Have Fun and Happy Halloween!")
+    alert("Well I can't hear you so I assume it's a good spookin' night. Prepare...TO GET SPOOKED! Have Fun and Happy Halloween!")}
 
-    let BeginningSecret = 0}
+let InstructionsSecret = 0
+let Instructions = false
 
 while (Instructions == false) {
-
-let Instructions = false
 
 let decision3 = Number(prompt("To begin, know that to enter decisions, you should type 1 for Yes, and 2 for No. If you type ANYTHING else from beyond this point, you will be booted out of the spook group. Are the instructions clear?"))
 
@@ -156,28 +158,33 @@ if (decision3 == 1) {
 
 if (decision3 == 2) {
 
-    alert("No")
+    alert("Why?")
     Instructions = true}
 
 
 if (decision3 !=1 && decision3 !=2) {
 
-    alert("Well, I can't tell so I will repeat my instructions (Btw, there is TOTALLY a secret if you repeat this 43 times. Do it. I know you want to.)")}
+    if (InstructionsSecret == 25 && BeginningSecret == 1){
 
-    let InstructionsSecret = 0
-    InstructionsSecret ++
+        alert("You can see a faint glow eminating from the instructions page. You feel the spookiness growing.")
 
-    if (InstructionsSecret == 43 && BeginningSecret == 1){
+        SpookinessLevel = 1}
 
-        alert("A faint glow eminates from the (fictional) instructions page. You feel the spookiness growing")}
+    if (InstructionsSecret == 25 && BeginningSecret == 0){
 
-        let SpookinessLevel = 1
+        alert("There was no secret. You were lied to. Made a fool of. You dummyhead, You buffoon, You imbecile, You figmenty-pigmenty crosser-tosser. Actually though, if you really want a secret, restart the game, then awnser yes to the first question. Afterwards, come back here. Or don't, I'm not your mom.")}
 
-    if (InstructionsSecret == 43 && BeginningSecret == 0){
+        InstructionsSecret ++
 
-        alert("There was no secret. You were lied to. If you really want the secret, restart the game and say Yes to the first question. Then come back here. Or don't, I'm not your mom.")}
+    if (SpookinessLevel == 0){
+        
+        alert("Well, I can't tell if you understood my instructions or not so I will repeat them. (Btw, there is TOTALLY a secret if you repeat this 25 times. It is real. It is not made up to waste your time. It is there. Do it. I know you want to. Please trust me. It is 1000000032985% completely real. Trust me. Do it.)")}
 
+    if (SpookinessLevel == 1){
+
+        alert("You already found the secret. There is actually no more. Go away.")}
     
+    }
 
 }
 
