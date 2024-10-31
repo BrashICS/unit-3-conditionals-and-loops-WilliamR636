@@ -171,9 +171,11 @@ if (decision3 !=1 && decision3 !=2) {
 
         alert("A faint glow eminates from the (fictional) instructions page. You feel the spookiness growing")}
 
+        let SpookinessLevel = 1
+
     if (InstructionsSecret == 43 && BeginningSecret == 0){
 
-        alert("There was no secret. You were lied to. If you really want the secret, restart the game and say Yes to the first question. Then come back here")}
+        alert("There was no secret. You were lied to. If you really want the secret, restart the game and say Yes to the first question. Then come back here. Or don't, I'm not your mom.")}
 
     
 
