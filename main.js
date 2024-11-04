@@ -111,6 +111,141 @@ if (value < 0)
         
 }
 
+function menu() {
+    
+    let msg = `Hi! Please make a selection:
+    1 - Play
+    2 - Options
+    3 - DLC
+    4 - Check for Updates
+    5 - Exit`
+
+    let selection = Number(prompt(msg));
+
+    if (selection == 1){
+
+        alert("Let's play!")
+
+        let msg2 = `Please select a difficulty:
+        1 - Easy
+        2 - Medium
+        3 - Hard`
+
+        let selection2 = Number(prompt(msg2));
+
+        if (selection2 == 1) {
+
+            console.log("You selected the easy route.")
+            return
+        }
+
+        else if (selection2 == 2) {
+
+            console.log("Most people select Medium.")
+            return
+        }
+
+        else if (selection2 == 3) {
+
+            console.log("I see you like a challenge!.")
+            return
+        }
+
+    }
+
+    else if (selection == 2){
+
+        console.log("You selected options.")
+        return
+    }
+
+    else if (selection == 3){
+
+        console.log("No new DLC at this time.")
+        return
+    }
+
+    else if (selection == 4){
+
+        console.log("Everything is up to date.")
+        return
+    }
+
+    else if (selection == 5){
+
+        console.log("Bye!")
+        return
+    }
+
+
+}
+
+function greeting(hour) {
+
+if (hour >= 0 && hour <= 11){
+
+return `Good Morning!`
+
+}
+
+else if (hour >= 12 && hour <= 17){
+
+return `Good Afternoon!`
+    
+}
+
+else if (hour >= 18 && hour <= 23){
+
+return `Good Evening!`
+    
+}
+
+else {
+
+return `Invalid hour!`
+        
+}
+
+}
+
+function two_digit() {
+
+let value = round(randInt(10, 100))
+
+if (value == 0) {
+
+return 0
+
+}
+
+else if (value % 2 == 0 && value % 3 == 0) {
+
+return console.log(`Six`)
+
+}
+
+else if (value % 2 == 1) {
+
+console.log(`Odd`)
+    
+}
+
+else if (value % 2 == 0) {
+
+return `Even`
+    
+}
+
+if (value % 2 == 1 && value % 3 == 1 && value % 5 == 1 && value % 7 == 1) {
+
+return `Prime`
+    
+}
+
+return
+
+}
+
 function Normal_House() {}
 
 function Decrepit_Manion() {}
