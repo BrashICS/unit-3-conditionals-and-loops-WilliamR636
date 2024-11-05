@@ -135,19 +135,19 @@ function menu() {
 
         if (selection2 == 1) {
 
-            console.log("You selected the easy route.")
+            alert("You selected the easy route.")
             return
         }
 
         else if (selection2 == 2) {
 
-            console.log("Most people select Medium.")
+            alert("Most people select Medium.")
             return
         }
 
         else if (selection2 == 3) {
 
-            console.log("I see you like a challenge!.")
+            alert("I see you like a challenge!.")
             return
         }
 
