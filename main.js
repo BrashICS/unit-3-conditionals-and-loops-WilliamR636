@@ -210,39 +210,39 @@ return `Invalid hour!`
 
 function two_digit() {
 
-let value = round(randInt(10, 100))
+    let value = round(randInt(10, 99), 0)
 
-if (value == 0) {
+    if (value == 0) {
 
-return 0
+        return 0
 
-}
+    }
 
-else if (value % 2 == 0 && value % 3 == 0) {
+    else if (value % 2 == 0 && value % 3 == 0) {
 
-return console.log(`Six`)
+        return console.log(`Six`)
 
-}
+    }
 
-else if (value % 2 == 1) {
+    else if (value % 2 == 1) {
 
-console.log(`Odd`)
-    
-}
+        console.log(`Odd`)
+        
+    }
 
-else if (value % 2 == 0) {
+    else if (value % 2 == 0) {
 
-return `Even`
-    
-}
+        return console.log(`Even`)
+        
+    }
 
-if (value % 2 == 1 && value % 3 == 1 && value % 5 == 1 && value % 7 == 1) {
+    if (value % 2 == 1 && value % 3 != 0  && value % 5 != 0 && value % 7 != 0) {
 
-return `Prime`
-    
-}
+        return console.log(`Prime`)
+        
+    }
 
-return
+    return
 
 }
 
