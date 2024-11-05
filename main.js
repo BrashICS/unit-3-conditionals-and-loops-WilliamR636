@@ -235,7 +235,6 @@ function two_digit() {
 
     if (value % 2 == 0) {
 
-        console.log(value)
         return console.log(`Even`)
         
     }
