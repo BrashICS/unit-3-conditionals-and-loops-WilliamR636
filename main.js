@@ -147,7 +147,7 @@ function menu() {
 
         else if (selection2 == 3) {
 
-            alert("I see you like a challenge!.")
+            alert("I see you like a challenge!")
             return
         }
 
