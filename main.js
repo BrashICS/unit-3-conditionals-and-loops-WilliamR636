@@ -214,24 +214,28 @@ function two_digit() {
 
     if (value == 0) {
 
+        console.log(value)
         return 0
 
     }
 
     else if (value % 2 == 0 && value % 3 == 0) {
 
-        return console.log(`Six`)
+        console.log(value)
+        console.log(`6x`)
 
     }
 
     else if (value % 2 == 1) {
 
+        console.log(value)
         console.log(`Odd`)
         
     }
 
     else if (value % 2 == 0) {
 
+        console.log(value)
         return console.log(`Even`)
         
     }
