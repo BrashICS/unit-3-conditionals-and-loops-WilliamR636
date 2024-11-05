@@ -14,6 +14,7 @@
 /*** Event Listeners ***/
 
 document.getElementById("Button").addEventListener("click", SpOoOoOoOoky)
+document.getElementById("guess").addEventListener("click", guess_10);
 
 /*** Functions ***/
 
@@ -249,6 +250,58 @@ function two_digit() {
 
 }
 
+function is_number(num) {
+
+if (typeof num == 'number'){
+
+    return true}
+
+else{
+
+    return false}
+
+}
+
+function which_day(n) {
+
+if (is_number(n) == false){
+
+    return `Invalid type`}
+
+else if (n == 1){
+
+    return `Sunday`}
+
+else if (n == 2){
+
+    return `Monday`}
+
+else if (n == 3){
+
+    return `Tuesday`}
+
+else if (n == 4){
+
+    return `Wednesday`}
+
+else if (n == 5){
+
+    return `Thursday`}
+
+else if (n == 6){
+
+    return `Friday`}
+
+else if (n == 7){
+
+    return `Saturday`}
+
+else{
+
+return `Invalid value`}
+
+}
+
 function Normal_House() {}
 
 function Decrepit_Manion() {}
@@ -386,5 +439,33 @@ Haunted_House()}
 if (decision4 !=1 && decision4 !=2 && decision4 !=3 && decision4 !=4){
 
 alert("What did I say about choosing numbers? Well you'll have to restart. Sorry but that's how it is. Good Luck on the next attempt though! Happy Halloween!")}
+
+}
+
+function guess_10() {
+
+let Answer = round(randInt(1,10), 0)
+
+let Guess = Number(prompt("Guess a number between 1-10"))
+
+if (is_number(Guess) == false){
+
+    return `An unidentified error has occurred. Please stop being the unidentified error.`}
+
+else if (Guess == Answer) {
+
+    return `You have sucessfully guessed the correct number. Good job!`}
+
+else if (Guess % 1 == 0 && Guess >= 1 && Guess <= 10 && Guess < Answer) {
+
+    return `Your guess was too low. The correct answer was ${Answer}`}
+    
+else if (Guess % 1 == 0 && Guess >= 1 && Guess <= 10 && Guess > Answer) {
+
+    return `Your guess was too high. The correct answer was ${Answer}`}
+
+else {
+
+    return `Your guess was not between 1-10 or a non-whole number. The correct answer was ${Answer}`}
 
 }
