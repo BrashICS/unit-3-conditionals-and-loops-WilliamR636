@@ -355,18 +355,18 @@ if (decision3 == 1) {
     alert("Cool. Let us BEGIN!")
     Instructions = true}
 
-if (decision3 == 2) {
+else if (decision3 == 2) {
 
     alert("Why?")
     Instructions = true}
 
-if (decision3 == 6082 && BeginningSecret == 1){
+else if (decision3 == 6082 && BeginningSecret == 1){
 
     alert("You can see a faint glow eminating from the instructions page. You sense a small house has been filled with magic.")
 
     SpookinessLevel = 1}
 
-if (decision3 !=1 && decision3 !=2 && (decision3 != 6082 && BeginningSecret !=1)) {
+else {
 
     if (InstructionsSecret == 25){
 
@@ -378,7 +378,7 @@ if (decision3 !=1 && decision3 !=2 && (decision3 != 6082 && BeginningSecret !=1)
         
         alert("Well, I can't tell if you understood my instructions or not so I will repeat them. (Btw, there is TOTALLY a secret if you repeat this 25 times. It is real. It is not made up to waste your time. It is there. Do it. I know you want to. Please trust me. It is 1000000032985% completely real. Trust me. Do it.)")}
 
-    if (InstructionsSecret > 25){
+    else if (InstructionsSecret > 25){
 
         alert("You already found the secret. There is actually no more. Go away.")}
     
@@ -424,7 +424,7 @@ if (decision4 == 2){
 
 Decrepit_Mansion()}
 
-if (decision4 == 3){
+if (decision4 == 3 && SpookinessLevel != 1){
 
 alert("You and your friends didn't know what they expected. But the dog certainly did. The dog LEAPS AT YOU and you all DIE...jk. The dog is friendly and lets you guys pet him. Your group decides that this is a pretty good way to spend their Halloween.After petting the dog and rubbing his belly, your group decides to call it a night. You leave fufilled, knowing that you got to pet a doggie. ENDING: 5/9. Dog Ending")}
 
