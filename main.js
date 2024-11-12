@@ -450,22 +450,75 @@ let Guess = Number(prompt("Guess a number between 1-10"))
 
 if (is_number(Guess) == false){
 
-    return `An unidentified error has occurred. Please stop being the unidentified error.`}
+    console.log(`An unidentified error has occurred. Please stop being the unidentified error.`)
+    return}
 
 else if (Guess == Answer) {
 
-    return `You have sucessfully guessed the correct number. Good job!`}
+    console.log(`You have sucessfully guessed the correct number. Good job!`)
+    return}
 
 else if (Guess % 1 == 0 && Guess >= 1 && Guess <= 10 && Guess < Answer) {
 
-    return `Your guess was too low. The correct answer was ${Answer}`}
+    console.log(`Your guess was too low. The correct answer was ${Answer}`)
+    return}
     
 else if (Guess % 1 == 0 && Guess >= 1 && Guess <= 10 && Guess > Answer) {
 
-    return `Your guess was too high. The correct answer was ${Answer}`}
+    console.log(`Your guess was too high. The correct answer was ${Answer}`)
+    return}
 
 else {
 
-    return `Your guess was not between 1-10 or a non-whole number. The correct answer was ${Answer}`}
+    console.log(`Your guess was not between 1-10 or a non-whole number. The correct answer was ${Answer}`)
+    return}
+
+}
+
+function countdown(start, stop) {
+
+    let starting = start
+
+    if (start <= stop) {
+
+        return -1}
+        
+    while (starting >= stop){
+
+        console.log(starting)
+        starting --}
+
+    return start - stop + 1
+}
+
+function random_until(min, max, stop) {
+
+    if (stop < min || stop > max || max <= min || stop % 1 != 0 || min % 1 != 0 || max % 1 != 0) {
+
+        return -1}
+        
+    let value = randInt(min, max)
+
+    while (value != stop){
+
+        console.log(value)
+        value = randInt(min, max)}
+
+    return stop
+
+}
+
+function average(n) {
+
+    let loops = 1
+    let number = 0
+
+    while (loops <= n){
+
+     number = number + Number(prompt(`Choose value ${loops}/${n}`))
+
+     loops ++}
+
+    return number / n
 
 }
