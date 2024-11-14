@@ -522,3 +522,75 @@ function average(n) {
     return number / n
 
 }
+
+function print_reverse(str) {
+
+    let number = 1
+    let reverse = ""
+
+    while (number <= str.length) {
+
+        reverse += str[str.length - number]
+        number ++}
+    
+    return reverse
+
+}
+
+function dragons_and_goblins(str) {
+
+    let Goblins = 0
+    let Dragons = 0
+    let Counting = 0
+
+    while (Counting <= str.length) {
+
+        if (str[Counting] == String.fromCharCode(100)){
+
+            Dragons ++}
+
+        else if (str[Counting] == String.fromCharCode(103)) {
+
+            Goblins ++}
+
+        Counting ++}
+
+    return `Dragons: ${Dragons} Goblins: ${Goblins}`
+
+}
+
+function add(str) {
+
+    let Result = 0
+    let Counting = 0
+
+    while (Counting < str.length) {
+
+        Result = Result + Number(str[Counting])
+        Counting ++}
+
+    return Result
+
+}
+
+function add_subtract(str) {
+
+    let Result = 0
+    let Counting = 0
+
+    while (Counting < str.length) {
+
+        if (str[Counting] == String.fromCharCode(45)) {
+
+            Counting ++
+            Result = Result - Number(str[Counting])}
+
+        else {
+
+            Result = Result + Number(str[Counting])}
+
+        Counting ++}
+
+    return Result
+
+}
