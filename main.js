@@ -594,3 +594,78 @@ function add_subtract(str) {
     return Result
 
 }
+
+function print_odd(n) {
+
+    let NumberThing = 1
+
+    if (n < 1 || !is_number(n)){
+
+        return}
+
+    else {
+
+        do {
+            
+            console.log(NumberThing)
+            NumberThing = NumberThing + 2
+
+        } while (n >= NumberThing)}
+}
+
+function negative_only() {
+
+    let output;
+
+    do {
+
+        output = +prompt("Enter a negative number: ");
+
+    } while (output >= 0)
+
+    return output
+
+}
+
+function parrot() {
+
+    let output;
+
+    do {
+
+        output = prompt("Please enter some text or type the word \"quit\" to exit: ");
+        console.log(output)
+
+        if (output.toLowerCase() != "quit") {
+
+            console.log(output.toUpperCase())}
+
+    } while (output.toLowerCase() != "quit")
+
+    return "GOODBYE!"
+
+}
+
+function factorial(n) {
+
+    let output = n;
+    let number = n;
+
+    if (!is_number) {
+
+        return}
+
+    else if (number > 1) {
+
+        do {
+
+            number --;
+            output = output * (number);
+
+        } while (number > 1)
+
+    return output}
+
+    else if (n == 1 || n == 0) {return 1}
+
+}
