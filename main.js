@@ -669,3 +669,57 @@ function factorial(n) {
     else if (n == 1 || n == 0) {return 1}
 
 }
+
+function count_up(start, stop) {
+
+    for (let x = start; x <= stop; x++) {
+
+        console.log(x)}
+
+    return
+}
+
+function count_down(start, stop) {
+
+    for (let x = start; x >= stop; x--) {
+
+        console.log(x)}
+
+    return
+}
+
+function print_chars(str, step) {
+
+    for (let x = 0; x <= str.length; x += step) {
+
+        console.log(str[x])}
+
+    return
+
+}
+
+function sum(n) {
+
+    let y = 0;
+
+    for (let x = 1; x <= n; x++) {
+
+        y += x}
+
+    return y;
+
+}
+
+function count_four(begin, end) {
+    
+    let z = 0
+
+    for (let x = begin; x <= end; x++) {
+
+        if (x % 4 == 0){
+
+        z++}}
+
+    return z;
+
+}
