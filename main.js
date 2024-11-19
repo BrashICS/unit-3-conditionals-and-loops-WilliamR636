@@ -723,3 +723,127 @@ function count_four(begin, end) {
     return z;
 
 }
+
+function sum_divisible(n, x) {
+    
+    let z = 0
+
+    for (let y = x; y <= n; y += x) {
+
+        z += y}
+
+    return z;
+
+}
+
+function count_char(str, char) {
+
+    let z = 0
+
+    for (let y = 0; y <= str.length; y++) {
+
+        if (str[y] == char[0]) {
+
+            z++}}
+
+    if (z == 0) {
+
+        return -1}
+
+    else {
+
+        return z}
+
+}
+
+function print_codes(str) {
+
+    for (let y = 0; y < str.length; y++) {
+
+        console.log(str.charCodeAt(y))}
+
+    return
+}
+
+function determine_case(c) {
+
+    let x = c.charCodeAt(0)
+
+    if (65  <= x && 90 >= x) {
+
+        return "U"}
+
+    else if (97  <= x && 122 >= x) {
+
+        return "L"}
+
+    else if (48  <= x && 57 >= x) {
+
+        return "N"}
+
+    else {
+
+        return "S"}
+
+}
+
+function print_case(str) {
+
+    let z = ""
+
+    for (let y = 0; y < str.length; y++) {
+    
+        z += determine_case(str[y])}
+
+    return z
+
+}
+
+function tail(str, n) {
+
+    let z = ""
+
+    if (!is_number(n) || n < 0 || n > str.length) {
+
+        return -1}
+
+    for (let y = n; y > 0; y--) {
+
+        z += str[str.length-y]}
+
+    return z
+
+}
+
+function print_line(char, width) {
+
+    let z = ""
+
+    for (let y = 0; y < width; y++) {
+
+        z += char}
+    console.log(z)
+
+}
+
+function print_rectangle(char, height, width) {
+
+    for (let y = 0; y < height; y++) {
+
+        print_line(char, width)}
+
+}
+
+function fib_sequence(n) {
+
+    if (!is_number(n) || n < 0) {
+
+        return -1}
+
+    let z = ""
+
+    for (let y = 0; y < n; y++) {
+
+        console.log}
+    console.log (z)
+}
