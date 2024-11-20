@@ -841,9 +841,41 @@ function fib_sequence(n) {
         return -1}
 
     let z = ""
+    let x = 0
+    let w = 1
 
     for (let y = 0; y < n; y++) {
 
-        console.log}
+        z += `${x}`
+
+        if (y != n - 1) {
+            z += ", "}
+
+        w = w + x
+        x = w - x}
+
     console.log (z)
+}
+
+function squirrel_crypt(str) {
+
+    let z = ""
+
+    for (y = 0; y < str.length; y++)
+
+        console.log(z)
+
+}
+
+function reversed(str) {
+
+    let z = ""
+    let y = 0
+
+    if (str.charCodeAt >= 65 && str.charCodeAt <= 90) {
+
+        y += 91 - str.charCodeAt
+        y = 26 - y
+        y = y + 65}
+
 }
